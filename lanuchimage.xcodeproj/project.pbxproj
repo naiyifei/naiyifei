@@ -15,6 +15,8 @@
 		28EE1B291D88EC4E00F4080B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EE1B271D88EC4E00F4080B /* LaunchScreen.storyboard */; };
 		28EE1B341D88EC4E00F4080B /* lanuchimageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EE1B331D88EC4E00F4080B /* lanuchimageTests.m */; };
 		28EE1B3F1D88EC4E00F4080B /* lanuchimageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EE1B3E1D88EC4E00F4080B /* lanuchimageUITests.m */; };
+		28EF1EC91D93CE3D005E51C1 /* xxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1EC71D93CE3D005E51C1 /* xxViewController.m */; };
+		28EF1ECA1D93CE3D005E51C1 /* xxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		28EE1B3A1D88EC4E00F4080B /* lanuchimageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lanuchimageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EE1B3E1D88EC4E00F4080B /* lanuchimageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lanuchimageUITests.m; sourceTree = "<group>"; };
 		28EE1B401D88EC4E00F4080B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EF1EC61D93CE3D005E51C1 /* xxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxViewController.h; sourceTree = "<group>"; };
+		28EF1EC71D93CE3D005E51C1 /* xxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xxViewController.m; sourceTree = "<group>"; };
+		28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				28EE1B271D88EC4E00F4080B /* LaunchScreen.storyboard */,
 				28EE1B2A1D88EC4E00F4080B /* Info.plist */,
 				28EE1B191D88EC4E00F4080B /* Supporting Files */,
+				28EF1EC61D93CE3D005E51C1 /* xxViewController.h */,
+				28EF1EC71D93CE3D005E51C1 /* xxViewController.m */,
+				28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */,
 			);
 			path = lanuchimage;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				TargetAttributes = {
 					28EE1B151D88EC4E00F4080B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CC84W6ZC69;
 					};
 					28EE1B2E1D88EC4E00F4080B = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -243,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EF1ECA1D93CE3D005E51C1 /* xxViewController.xib in Resources */,
 				28EE1B291D88EC4E00F4080B /* LaunchScreen.storyboard in Resources */,
 				28EE1B261D88EC4E00F4080B /* Assets.xcassets in Resources */,
 				28EE1B241D88EC4E00F4080B /* Main.storyboard in Resources */,
@@ -270,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EF1EC91D93CE3D005E51C1 /* xxViewController.m in Sources */,
 				28EE1B211D88EC4E00F4080B /* ViewController.m in Sources */,
 				28EE1B1E1D88EC4E00F4080B /* AppDelegate.m in Sources */,
 				28EE1B1B1D88EC4E00F4080B /* main.m in Sources */,
@@ -413,10 +424,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = lanuchimage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lanuchimage.lanuchimage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +440,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = lanuchimage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lanuchimage.lanuchimage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +519,7 @@
 				28EE1B451D88EC4F00F4080B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28EE1B461D88EC4F00F4080B /* Build configuration list for PBXNativeTarget "lanuchimageTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +528,7 @@
 				28EE1B481D88EC4F00F4080B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28EE1B491D88EC4F00F4080B /* Build configuration list for PBXNativeTarget "lanuchimageUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +537,7 @@
 				28EE1B4B1D88EC4F00F4080B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
