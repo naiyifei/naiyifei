@@ -17,6 +17,9 @@
 		28EE1B3F1D88EC4E00F4080B /* lanuchimageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EE1B3E1D88EC4E00F4080B /* lanuchimageUITests.m */; };
 		28EF1EC91D93CE3D005E51C1 /* xxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EF1EC71D93CE3D005E51C1 /* xxViewController.m */; };
 		28EF1ECA1D93CE3D005E51C1 /* xxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */; };
+		28F54B131D9D46A80044F937 /* ShowBtnColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F54B121D9D46A80044F937 /* ShowBtnColor.m */; };
+		28F59CA81DAA860D002FFD45 /* aaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F59CA61DAA860D002FFD45 /* aaViewController.m */; };
+		28F59CA91DAA860D002FFD45 /* aaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F59CA71DAA860D002FFD45 /* aaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		28EF1EC61D93CE3D005E51C1 /* xxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxViewController.h; sourceTree = "<group>"; };
 		28EF1EC71D93CE3D005E51C1 /* xxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xxViewController.m; sourceTree = "<group>"; };
 		28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxViewController.xib; sourceTree = "<group>"; };
+		28F54B111D9D46A80044F937 /* ShowBtnColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBtnColor.h; sourceTree = "<group>"; };
+		28F54B121D9D46A80044F937 /* ShowBtnColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowBtnColor.m; sourceTree = "<group>"; };
+		28F59CA51DAA860D002FFD45 /* aaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aaViewController.h; sourceTree = "<group>"; };
+		28F59CA61DAA860D002FFD45 /* aaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aaViewController.m; sourceTree = "<group>"; };
+		28F59CA71DAA860D002FFD45 /* aaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = aaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,11 @@
 				28EF1EC61D93CE3D005E51C1 /* xxViewController.h */,
 				28EF1EC71D93CE3D005E51C1 /* xxViewController.m */,
 				28EF1EC81D93CE3D005E51C1 /* xxViewController.xib */,
+				28F59CA51DAA860D002FFD45 /* aaViewController.h */,
+				28F59CA61DAA860D002FFD45 /* aaViewController.m */,
+				28F59CA71DAA860D002FFD45 /* aaViewController.xib */,
+				28F54B111D9D46A80044F937 /* ShowBtnColor.h */,
+				28F54B121D9D46A80044F937 /* ShowBtnColor.m */,
 			);
 			path = lanuchimage;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 			files = (
 				28EF1ECA1D93CE3D005E51C1 /* xxViewController.xib in Resources */,
 				28EE1B291D88EC4E00F4080B /* LaunchScreen.storyboard in Resources */,
+				28F59CA91DAA860D002FFD45 /* aaViewController.xib in Resources */,
 				28EE1B261D88EC4E00F4080B /* Assets.xcassets in Resources */,
 				28EE1B241D88EC4E00F4080B /* Main.storyboard in Resources */,
 			);
@@ -283,6 +297,8 @@
 				28EF1EC91D93CE3D005E51C1 /* xxViewController.m in Sources */,
 				28EE1B211D88EC4E00F4080B /* ViewController.m in Sources */,
 				28EE1B1E1D88EC4E00F4080B /* AppDelegate.m in Sources */,
+				28F54B131D9D46A80044F937 /* ShowBtnColor.m in Sources */,
+				28F59CA81DAA860D002FFD45 /* aaViewController.m in Sources */,
 				28EE1B1B1D88EC4E00F4080B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

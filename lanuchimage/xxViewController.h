@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShowBtnColor.h"
+#import "aaViewController.h"
 
-@interface xxViewController : UIViewController
+
+@interface xxViewController : UIViewController<aaViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *xxx;
 //
 
 //
+- (IBAction)click:(id)sender;
+- (IBAction)xxxxx:(id)sender;
 
 @end

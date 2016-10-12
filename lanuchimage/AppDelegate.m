@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "xxViewController.h"
+#import "aaViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +24,21 @@
     
     self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    ViewController *xx = [[ViewController alloc] init];
+ 
+    
+    
+    xxViewController *xx = [[xxViewController alloc] init];
+    
+    
+    //aaViewController *xx = [[aaViewController alloc] init];
+    
+    //UINavigationController *aa = [[UINavigationController alloc] initWithRootViewController:xx];
+    
+//    //storyBoard实例化
+//    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    
+//    //UserInfo实例化
+//    ViewController *xx = [mainStoryBoard instantiateViewControllerWithIdentifier:@"viewcon"];
     
     self.window.rootViewController = xx;
     

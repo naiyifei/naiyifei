@@ -14,13 +14,45 @@
 
 @implementation ViewController
 
+
+-(void)loadView
+{
+    NSLog(@"ccccc");
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    NSLog(@"ssssss");
+    NSLog(@"viewDidLoad");
 }
+
+
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        NSLog(@"initWithNibName");
+    }
+    return self;
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"viewWillAppear");
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"viewDidAppear");
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -5,10 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="xxViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="aaViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="xxx" destination="z9p-Gx-64F" id="Zoz-nj-Tjk"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,18 +15,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9p-Gx-64F">
-                    <rect key="frame" x="110" y="134" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUI-Jo-dxn">
+                    <rect key="frame" x="33" y="86" width="87" height="30"/>
+                    <state key="normal" title="代理"/>
                     <connections>
-                        <action selector="click:" destination="-1" eventType="touchUpInside" id="P5E-bB-VpL"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btK-fo-Tcq">
-                    <rect key="frame" x="116" y="269" width="96" height="30"/>
-                    <state key="normal" title="sadfsdfdsfdsf"/>
-                    <connections>
-                        <action selector="xxxxx:" destination="-1" eventType="touchUpInside" id="coU-8h-P03"/>
+                        <action selector="aa:" destination="-1" eventType="touchUpInside" id="Mpi-EG-HXX"/>
                     </connections>
                 </button>
             </subviews>
