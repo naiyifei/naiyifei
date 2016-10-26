@@ -25,7 +25,7 @@
     self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
  
-    //你好
+    //你好qq
     
     xxViewController *xx = [[xxViewController alloc] init];
     
