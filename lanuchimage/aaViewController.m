@@ -18,32 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //[self.view setBackgroundColor:[UIColor redColor]];
-    
  
-    
-//    UIButton *But_Visitor= [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [But_Visitor setTitle: @"访客" forState: UIControlStateNormal];
-//    
-// 
-//    But_Visitor.titleLabel.numberOfLines = 0;
-//    But_Visitor.titleLabel.textAlignment = NSTextAlignmentCenter;
-//    
-//    But_Visitor.frame = CGRectMake(170, 110 , 50, 40);
-//  
-//    But_Visitor.titleLabel.font = [UIFont systemFontOfSize:14];
-//    
-//    [But_Visitor addTarget:self action:@selector(Visitor_Click:) forControlEvents:UIControlEventTouchUpInside];
-//    
-//    //[self.view addSubview: But_Visitor];
-//   
-//    [self.view insertSubview:But_Visitor atIndex:1001];
 }
 
 
--(void)Visitor_Click:(id)sender {
-    //NSLog(@"cd:sender1");
-}
 
 
 - (void)didReceiveMemoryWarning {
@@ -56,34 +34,36 @@
 
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)selector_changecolor:(changecolor)xx
+{
+     UIColor *color = [UIColor greenColor];
+     xx(color);
 }
-*/
 
-//- (IBAction)xxx:(id)sender {
-//    
-//     NSLog(@"cd:sender");
-//    //[self.aadelegate DismissContactsCtrl];
-// 
-//    
-//
-//}
-
+ 
 
 - (IBAction)aa:(id)sender {
     
+       UIColor *color = [UIColor redColor];
     
-    
-    if( [self.aadelegate respondsToSelector:@selector(DismissContactsCtrl)] ){
-          NSLog(@"111");
-        [self.aadelegate DismissContactsCtrl];
+    if( [self.aadelegate respondsToSelector:@selector(DismissContactsCtrl:)] )
+    {
+        [self.aadelegate DismissContactsCtrl:color];
+        
+        NSLog(@"cd:1111");
     }
+    
+    
+  
+    
+ 
+    
+//    if ( self.changebackcolor) {
+//            self.changebackcolor(color);
+//    }
+ 
+    
+    [self.view removeFromSuperview];
 }
 
 

@@ -10,10 +10,12 @@
 
 
 @protocol aaViewControllerDelegate<NSObject>
--(void)DismissContactsCtrl;
+
+-(void)DismissContactsCtrl:(UIColor *)color;
+
 @end
 
-
+typedef void(^changecolor)(id);
 
 @interface aaViewController : UIViewController
  
@@ -21,5 +23,13 @@
 - (IBAction)aa:(id)sender;
 
 @property (nonatomic, weak) id<aaViewControllerDelegate>   aadelegate;
+
+
+
+
+@property (nonatomic, copy)changecolor changebackcolor;
+
+
+-(void)selector_changecolor:(changecolor)xx;
 
 @end

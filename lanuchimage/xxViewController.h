@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ShowBtnColor.h"
 #import "aaViewController.h"
+#import "ShowBtnColorSon.h"
 
+#import "AFHTTPSessionManager.h"
 
 @interface xxViewController : UIViewController<aaViewControllerDelegate>
+{
+ 
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *xxx;
 //

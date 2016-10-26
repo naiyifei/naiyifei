@@ -12,6 +12,8 @@
 
 @end
 
+
+
 @implementation xxViewController
 
 - (void)viewDidLoad {
@@ -24,11 +26,77 @@
 //    aaViewController *xx=  [[aaViewController alloc] init];
 //    xx.aadelegate = self;
     
+ 
+//    ShowBtnColorSon *xx=  [[ShowBtnColorSon alloc] init];
+//    
+//    [xx paySalary:5 xx:@"df4ds54few"];
+    
+    
+    void (^msgblocks) (void) = ^(void)
+    {
+        NSLog(@"123456");
+    };
+    
+    
+    msgblocks();
+    
+    
+          NSStringEncoding gbk = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    
+    NSString *aa =(NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                              (CFStringRef)@"你傲娇啊",
+                                                              NULL,
+                                                              CFSTR(":/?#[]@!$&’()*+,;="),
+                                                              (int)gbk));
+    
+    
+    NSString*Cookie =[NSString stringWithFormat:@"user=%@", aa ];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager.requestSerializer setValue:Cookie forHTTPHeaderField:@"Cookie"];
+    
+    NSString *URL = [NSString stringWithFormat:@"http://web.gxsky.com/nyf/2016/xx.php"];
+    
+   //__block NSStringEncoding gbk = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    
+    [manager POST:URL parameters:nil progress:^(NSProgress * _Nonnull downloadProgress)
+     {
+         //这里可以获取到目前的数据请求的进度
+     }
+          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
+     {
+         //请求成功
+     
+         
+        NSString *xx = [[NSString alloc] initWithData: responseObject encoding: gbk];
+         
+         NSLog(@"xx:%@", xx);
+         
+     }
+          failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)
+     {
+         //请求失败
+         NSLog(@"e:%@", [error localizedDescription]);
+     }];
+
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
--(void)DismissContactsCtrl{
-     NSLog(@"cd:2ddddddd");
+
+-(void)DismissContactsCtrl:(UIColor *)color
+{
+    self.view.backgroundColor = color;
 }
 
 
@@ -65,26 +133,10 @@
     ShowBtnColor *xx = [[ShowBtnColor alloc] init];
     
     xx.Str = @"bbbb444123";
-    //[xx setStr:@"vvvcccc"];
+ 
+ 
     
-    NSString *bb = xx.Str;
-    NSLog(@"cd bb:%@", bb);
-    
-//    [xx paySalaryForStaff:007 withMoney:^(int salary) {
-//        if(salary==50000)
-//            
-//        {
-//            
-//            NSLog(@"我靠，这个月绩效满分啊！和朋友庆祝一下！");
-//            
-//            //code 拿着工资各种败家……
-//            
-//        }
-//
-//    }];
-    
-    
-    [xx paySalaryForStaff:^(int salary) {
+    [xx paySalaryForStaff:007 withMoney:^(int salary) {
         if(salary==50000)
             
         {
@@ -94,8 +146,22 @@
             //code 拿着工资各种败家……
             
         }
-        
+
     }];
+    
+    
+//    [xx paySalaryForStaff:^(int salary) {
+//        if(salary==50000)
+//            
+//        {
+//            
+//            NSLog(@"我靠，这个月绩效满分啊！和朋友庆祝一下！");
+//            
+//            //code 拿着工资各种败家……
+//            
+//        }
+//        
+//    }];
     
     [xx paySalary:5000];
     
@@ -108,14 +174,29 @@
     aa.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
  
     
-    aa.aadelegate = self;
+    //aa.aadelegate = self;
+    
+    
+     [aa selector_changecolor:^(UIColor *color) {
+         self.view.backgroundColor = color;
+     }];
+    
+    
     
     //NSLog(@"cd self:%@", NSStringFromCGRect(self.view.frame) );
-   //NSLog(@"cd aa:%@", NSStringFromCGRect(aa.view.frame) );
  
+ 
+    
+    
+//    aa.changebackcolor = ^(UIColor *color)
+//    {
+//        self.view.backgroundColor = color;
+//    };
+    
+    
     //必须要 不然子视图 按钮无响应
-    [self addChildViewController:aa];
-    [self.view addSubview:aa.view];
+    //[self addChildViewController:aa];
+    //[self.view addSubview:aa.view];
  
  
     
